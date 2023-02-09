@@ -1,20 +1,25 @@
+import Head from 'next/head';
 import Link from 'next/link';
 import AppBar from '@mui/material/AppBar';
-import { MainLayout } from '@/components/MainLayout';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 
-export default function About() {
+export function MainLayout({ children, title = 'home' }: any) {
   return (
     <>
-      <MainLayout title='about'>
-        {/* <AppBar component='nav'>
+      <Head>
+        <title>next | {title}</title>
+      </Head>
+      <nav>
+        <AppBar component='nav'>
           <Box sx={{ display: 'flex' }}>
             <Typography variant='h6' sx={{ my: 2 }}>
               Next
             </Typography>
+            <Link href='/about'>
+              <h1>About</h1>
+            </Link>
 
-            <h1>About</h1>
             <Link href='/'>Hi</Link>
             <Link href='/task/1'>
               <p>
@@ -37,18 +42,9 @@ export default function About() {
               </p>
             </Link>
           </Box>
-        </AppBar> */}
-        <Box mt={8}>
-          <Typography variant='h6' sx={{ my: 2 }}>
-            Welcom to Next.js
-          </Typography>
-        </Box>
-        {/* <Box component='main' sx={{ p: 3 }}>
-          <Typography variant='h6' sx={{ my: 2 }}>
-            Welcom to Next.js
-          </Typography>
-        </Box> */}
-      </MainLayout>
+        </AppBar>
+      </nav>
+      <main>{children}</main>
     </>
   );
 }

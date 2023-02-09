@@ -19,19 +19,6 @@ export default function Home() {
       <main className={styles.main}>
         <div className={styles.description}>
           <Link href='/about'>About</Link>
-          {/* <p>
-            <button onClick={() => setId('1')}>1</button>
-          </p>
-          <p>
-            <button onClick={() => setId('2')}>2</button>
-          </p>
-          <p>
-            <button onClick={() => setId('3')}>3</button>
-          </p>
-          <p>
-            <button onClick={() => setId('4')}>4</button>
-          </p> */}
-
           <p>
             Get started by editing&nbsp;
             <code className={styles.code}>src/pages/index.tsx</code>

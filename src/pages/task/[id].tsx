@@ -1,15 +1,35 @@
 import Link from 'next/link';
+import { MainLayout } from '@/components/MainLayout';
 import { useRouter } from 'next/router';
+import { useState, useEffect } from 'react';
 
 export default function Task(data: any) {
   const router = useRouter();
-  const post = data.data.filter((post: any) => post.id === router.query.id);
+
+  const [post, setPost] = useState('');
+
+  useEffect(() => {
+    setPost(data.data.filter((post: any) => post.id === router.query.id));
+  }, [data.data, router.query.id]);
+
+  let output: any;
+  if (!post) {
+    output = <h1>Loading</h1>;
+  } else {
+    output = (
+      <>
+        <p>{JSON.stringify(post)}</p>
+      </>
+    );
+  }
 
   return (
     <>
-      <Link href='/about'>About</Link>
-      <h1>{`${router.query.id}`}</h1>
-      <div>{JSON.stringify(post)}</div>
+      <MainLayout title='task'>
+        <Link href='/about'>About</Link>
+        <h1>{`${router.query.id}`}</h1>
+        <div>{output}</div>
+      </MainLayout>
     </>
   );
 }
