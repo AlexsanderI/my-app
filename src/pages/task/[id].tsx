@@ -2,6 +2,8 @@ import Link from 'next/link';
 import { MainLayout } from '@/components/MainLayout';
 import { useRouter } from 'next/router';
 import { useState, useEffect } from 'react';
+import Typography from '@mui/material/Typography';
+import Box from '@mui/material/Box';
 
 export default function Task(data: any) {
   const router = useRouter();
@@ -26,9 +28,13 @@ export default function Task(data: any) {
   return (
     <>
       <MainLayout title='task'>
-        <Link href='/about'>About</Link>
-        <h1>{`${router.query.id}`}</h1>
-        <div>{output}</div>
+        <Box mt={8}>
+          <Typography sx={{ my: 2 }}>
+            <h2>ID</h2>
+            <p>{`${router.query.id}`}</p>
+            <div>{output}</div>
+          </Typography>
+        </Box>
       </MainLayout>
     </>
   );
