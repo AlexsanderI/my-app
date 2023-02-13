@@ -30,7 +30,7 @@ export default function Task(data: any) {
       <MainLayout title='task'>
         <Box mt={8}>
           <Typography sx={{ my: 2 }}>
-            <h2>ID</h2>
+            <div>ID</div>
             <p>{`${router.query.id}`}</p>
             <div>{output}</div>
           </Typography>

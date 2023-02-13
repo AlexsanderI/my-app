@@ -3,6 +3,8 @@ import Link from 'next/link';
 import AppBar from '@mui/material/AppBar';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
+import Toolbar from '@mui/material/Toolbar';
+import { Button } from '@mui/material';
 
 export function MainLayout({ children, title = 'home' }: any) {
   return (
@@ -33,19 +35,27 @@ export function MainLayout({ children, title = 'home' }: any) {
                 textTransform: 'uppercase',
               }}
             >
+              {/* <Toolbar> */}
+              <Button sx={{ color: '#fff' }}>Hi</Button>
+              {/* </Toolbar> */}
               <Box
                 sx={{
                   display: 'flex',
                   pr: '20px',
                 }}
               >
-                <Typography
-                  textTransform='uppercase'
-                  variant='h6'
-                  sx={{ my: 2 }}
-                >
-                  <Link href='/about'>About</Link>
-                </Typography>
+                <Link href='/about'>
+                  <Button sx={{ color: '#fff' }}>
+                    {' '}
+                    <Typography
+                      textTransform='uppercase'
+                      variant='h6'
+                      sx={{ my: 2 }}
+                    >
+                      About
+                    </Typography>
+                  </Button>
+                </Link>
               </Box>
               <Box
                 sx={{
@@ -55,7 +65,7 @@ export function MainLayout({ children, title = 'home' }: any) {
               >
                 <Typography
                   textTransform='uppercase'
-                  variant='h6'
+                  variant='button'
                   sx={{ my: 2 }}
                 >
                   <Link href='/'>Home</Link>
