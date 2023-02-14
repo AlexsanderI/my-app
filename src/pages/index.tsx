@@ -20,7 +20,7 @@ export default function Home() {
       <MainLayout title='Home'>
         <main className={styles.main}>
           <div className={styles.description}>
-            <Link href='/about'>About</Link>
+            <div>Hi Alex</div>
             <p>
               Get started by editing&nbsp;
               <code className={styles.code}>src/pages/index.tsx</code>

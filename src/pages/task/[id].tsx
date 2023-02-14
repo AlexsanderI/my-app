@@ -28,10 +28,9 @@ export default function Task(data: any) {
   return (
     <>
       <MainLayout title='task'>
-        <Box mt={8}>
+        <Box mt={15}>
           <Typography sx={{ my: 2 }}>
-            <div>ID</div>
-            <p>{`${router.query.id}`}</p>
+            <p>ID {router.query.id}</p>
             <div>{output}</div>
           </Typography>
         </Box>
