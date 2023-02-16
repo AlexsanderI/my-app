@@ -18,11 +18,7 @@ export default function Task(data: any) {
   if (!post) {
     output = <h1>Loading</h1>;
   } else {
-    output = (
-      <>
-        <p>{JSON.stringify(post)}</p>
-      </>
-    );
+    output = <div>{JSON.stringify(post)}</div>;
   }
 
   return (
