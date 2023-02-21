@@ -1,20 +1,17 @@
 import '@/styles/globals.css';
-import { ThemeProvider } from '@mui/material';
+import { CssBaseline, ThemeProvider } from '@mui/material';
 import { theme } from '../theme/index';
-// import type { AppProps } from 'next/app';
 import createEmotionCache from '@/theme/createEmotionCache';
 import { CacheProvider } from '@emotion/react';
 
 const clientSideEmotionCache = createEmotionCache();
 
-export default function App({
-  Component,
-  emotionCache = clientSideEmotionCache,
-  pageProps,
-}: any) {
+export default function App(props: any) {
+  const { Component, emotionCache = clientSideEmotionCache, pageProps } = props;
   return (
     <CacheProvider value={emotionCache}>
       <ThemeProvider theme={theme}>
+        <CssBaseline />
         <Component {...pageProps} />
       </ThemeProvider>
     </CacheProvider>
