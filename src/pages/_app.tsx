@@ -1,4 +1,3 @@
-import '@/styles/globals.css';
 import { CssBaseline, ThemeProvider } from '@mui/material';
 import { theme } from '../theme/index';
 import createEmotionCache from '@/theme/createEmotionCache';
