@@ -2,6 +2,7 @@ import Head from 'next/head';
 import Image from 'next/image';
 import { Inter } from '@next/font/google';
 import { MainLayout } from '@/components/MainLayout';
+import { Box } from '@mui/system';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -16,7 +17,14 @@ export default function Home() {
       </Head>
       <MainLayout title='Home'>
         <main>
-          <div>
+          <Box
+            sx={{
+              display: 'flex',
+              width: '100vw',
+              alignItems: 'center',
+              justifyContent: 'space-around',
+            }}
+          >
             <div>Hi Alex</div>
             <p>
               Get started by editing&nbsp;
@@ -38,8 +46,7 @@ export default function Home() {
                 />
               </a>
             </div>
-          </div>
-
+          </Box>
           <div>
             <Image
               src='/next.svg'
