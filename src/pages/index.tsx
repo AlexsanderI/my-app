@@ -5,6 +5,7 @@ import { MainLayout } from '@/components/MainLayout';
 import { Box } from '@mui/system';
 import { Typography } from '@mui/material';
 import Link from 'next/link';
+import { Title } from '@/components/Title';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -27,7 +28,7 @@ export default function Home() {
               justifyContent: 'space-around',
             }}
           >
-            <Typography>Hi Alex</Typography>
+            <Title>Hi Alex</Title>
             <Box
               sx={{
                 display: 'flex',
