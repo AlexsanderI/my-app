@@ -10,7 +10,7 @@ import {
   TitleWeight,
   TitleH2,
   TitleDescription,
-  PageBackground,
+  EditBackground,
 } from '@/components/Title';
 import { Indentation } from '@/components/Title';
 
@@ -44,10 +44,10 @@ export default function Home() {
                 alignItems: 'center',
               }}
             >
-              <PageBackground>
+              <EditBackground>
                 <Title>Get started by editing&nbsp;</Title>
                 <TitleWeight>src/pages/index.tsx</TitleWeight>
-              </PageBackground>
+              </EditBackground>
             </Box>
 
             <Link
