@@ -5,11 +5,8 @@ import { Typography } from '@mui/material';
 
 export const EditBackground = styled(Box)<any>`
  display: flex;
- width: 350px;
- height: 45px;
  border: 1px solid red;
- align-items: center;
- justify-content: center;
+    padding: 1rem;
 }
 `;
 
