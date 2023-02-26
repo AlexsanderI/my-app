@@ -3,6 +3,8 @@ import styled from '@emotion/styled';
 import { Box } from '@mui/material';
 import { Typography } from '@mui/material';
 
+export const PageBackground = styled(Box)<any>``;
+
 export const Title = styled(Typography)<any>`
   color: #000000;
   font-family: ui-monospace, Menlo, Monaco, monospace;
@@ -17,6 +19,27 @@ export const Indentation = styled(Box)<any>`
   margin-top: 160px;
   display: flex;
   width: 100%;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
+`;
+
+export const TitleDescription = styled(Typography)`
+  color: #000000;
+  margin: 10px;
+  opacity: 0.6;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  max-width: 30ch;
+`;
+
+export const TitleH2 = styled.h2<any>`
+  position: relative;
+  color: #000000;
+  margin: 0;
+  padding: 1rem;
+  font-weight: 600;
+  margin-bottom: 0.7rem;
+  // background-color: rgba(var(--callout-rgb), 0.5);
+  // border: 1px solid rgba(var(--callout-border-rgb), 0.3);
+  // border-radius: var(--border-radius);
 `;

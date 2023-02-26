@@ -5,7 +5,13 @@ import { MainLayout } from '@/components/MainLayout';
 import { Box } from '@mui/system';
 import { Typography } from '@mui/material';
 import Link from 'next/link';
-import { Title, TitleWeight } from '@/components/Title';
+import {
+  Title,
+  TitleWeight,
+  TitleH2,
+  TitleDescription,
+  PageBackground,
+} from '@/components/Title';
 import { Indentation } from '@/components/Title';
 
 const inter = Inter({ subsets: ['latin'] });
@@ -20,7 +26,7 @@ export default function Home() {
         <link rel='icon' href='/favicon.ico' />
       </Head>
       <MainLayout title='Home'>
-        <Box>
+        <PageBackground>
           <Box
             sx={{
               mt: '50px',
@@ -90,12 +96,12 @@ export default function Home() {
               rel='noopener noreferrer'
               style={{ textDecoration: 'none' }}
             >
-              <Typography>
+              <TitleH2>
                 Docs <span>-&gt;</span>
-              </Typography>
-              <Typography>
+              </TitleH2>
+              <TitleDescription>
                 Find in-depth information about Next.js features and&nbsp;API.
-              </Typography>
+              </TitleDescription>
             </Link>
 
             <Link
@@ -105,12 +111,12 @@ export default function Home() {
               passHref
               style={{ textDecoration: 'none' }}
             >
-              <Typography sx={{ textDecoration: 'none' }}>
+              <TitleH2 sx={{ textDecoration: 'none' }}>
                 Learn <span>-&gt;</span>
-              </Typography>
-              <Typography sx={{ textDecoration: 'none' }}>
+              </TitleH2>
+              <TitleDescription sx={{ textDecoration: 'none' }}>
                 Learn about Next.js in an interactive course with&nbsp;quizzes!
-              </Typography>
+              </TitleDescription>
             </Link>
 
             <Link
@@ -119,12 +125,12 @@ export default function Home() {
               rel='noopener noreferrer'
               style={{ textDecoration: 'none' }}
             >
-              <Typography>
+              <TitleH2>
                 Templates <span>-&gt;</span>
-              </Typography>
-              <Typography>
+              </TitleH2>
+              <TitleDescription>
                 Discover and deploy boilerplate example Next.js&nbsp;projects.
-              </Typography>
+              </TitleDescription>
             </Link>
 
             <Link
@@ -133,16 +139,16 @@ export default function Home() {
               rel='noopener noreferrer'
               style={{ textDecoration: 'none' }}
             >
-              <Typography>
+              <TitleH2>
                 Deploy <span>-&gt;</span>
-              </Typography>
-              <Typography>
+              </TitleH2>
+              <TitleDescription>
                 Instantly deploy your Next.js site to a shareable URL
                 with&nbsp;Vercel.
-              </Typography>
+              </TitleDescription>
             </Link>
           </Indentation>
-        </Box>
+        </PageBackground>
       </MainLayout>
     </>
   );
