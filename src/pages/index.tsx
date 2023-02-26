@@ -37,8 +37,8 @@ export default function Home() {
                 alignItems: 'center',
               }}
             >
-              <Typography>Get started by editing&nbsp;</Typography>
-              <Typography>src/pages/index.tsx</Typography>
+              <Title>Get started by editing&nbsp;</Title>
+              <Title>src/pages/index.tsx</Title>
             </Box>
 
             <Link
@@ -53,7 +53,7 @@ export default function Home() {
                   display: 'flex',
                 }}
               >
-                <Typography>By </Typography>
+                <Title>By </Title>
                 <Image
                   src='/vercel.svg'
                   alt='Vercel Logo'
