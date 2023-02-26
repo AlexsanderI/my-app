@@ -9,6 +9,10 @@ export const Title = styled(Typography)<any>`
   font-size: 13.6px;
 `;
 
+export const TitleWeight = styled(Title)<any>`
+  font-weight: 700;
+`;
+
 export const Indentation = styled(Box)<any>`
   margin-top: 160px;
   display: flex;

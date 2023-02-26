@@ -5,7 +5,7 @@ import { MainLayout } from '@/components/MainLayout';
 import { Box } from '@mui/system';
 import { Typography } from '@mui/material';
 import Link from 'next/link';
-import { Title } from '@/components/Title';
+import { Title, TitleWeight } from '@/components/Title';
 import { Indentation } from '@/components/Title';
 
 const inter = Inter({ subsets: ['latin'] });
@@ -23,6 +23,7 @@ export default function Home() {
         <Box>
           <Box
             sx={{
+              mt: '50px',
               display: 'flex',
               width: '100vw',
               alignItems: 'center',
@@ -38,7 +39,7 @@ export default function Home() {
               }}
             >
               <Title>Get started by editing&nbsp;</Title>
-              <Title>src/pages/index.tsx</Title>
+              <TitleWeight>src/pages/index.tsx</TitleWeight>
             </Box>
 
             <Link
