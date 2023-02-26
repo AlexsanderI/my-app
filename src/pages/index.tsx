@@ -6,6 +6,7 @@ import { Box } from '@mui/system';
 import { Typography } from '@mui/material';
 import Link from 'next/link';
 import { Title } from '@/components/Title';
+import { Indentation } from '@/components/Title';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -63,16 +64,7 @@ export default function Home() {
               </Box>
             </Link>
           </Box>
-          <Box
-            mt={20}
-            sx={{
-              display: 'flex',
-              width: '100%',
-              justifyContent: 'center',
-              alignItems: 'center',
-              alignSelf: 'center',
-            }}
-          >
+          <Indentation>
             <Image
               src='/next.svg'
               alt='Next.js Logo'
@@ -88,18 +80,9 @@ export default function Home() {
               height={31}
               priority
             />
-          </Box>
+          </Indentation>
 
-          <Box
-            mt={20}
-            sx={{
-              display: 'flex',
-              width: '100vw',
-              alignItems: 'center',
-              justifyContent: 'space-around',
-              alignSelf: 'flex-end',
-            }}
-          >
+          <Indentation>
             <Link
               href='https://nextjs.org/docs?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app'
               target='_blank'
@@ -157,7 +140,7 @@ export default function Home() {
                 with&nbsp;Vercel.
               </Typography>
             </Link>
-          </Box>
+          </Indentation>
         </Box>
       </MainLayout>
     </>
