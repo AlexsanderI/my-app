@@ -8,7 +8,7 @@ export default function About() {
   return (
     <>
       <MainLayout title='about'>
-        <Box mt={15}>
+        <Box>
           <Typography sx={{ my: 2 }}>Welcome to Next.js</Typography>
         </Box>
       </MainLayout>

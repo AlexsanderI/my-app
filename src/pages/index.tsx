@@ -19,13 +19,14 @@ export default function Home() {
         <link rel='icon' href='/favicon.ico' />
       </Head>
       <MainLayout title='Home'>
-        <main>
+        <Box>
           <Box
             sx={{
               display: 'flex',
               width: '100vw',
               alignItems: 'center',
               justifyContent: 'space-around',
+              alignSelf: 'flex-start',
             }}
           >
             <Title>Hi Alex</Title>
@@ -43,6 +44,7 @@ export default function Home() {
               href='https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app'
               target='_blank'
               rel='noopener noreferrer'
+              style={{ textDecoration: 'none' }}
             >
               {' '}
               <Box
@@ -62,11 +64,13 @@ export default function Home() {
             </Link>
           </Box>
           <Box
+            mt={20}
             sx={{
               display: 'flex',
               width: '100%',
               justifyContent: 'center',
               alignItems: 'center',
+              alignSelf: 'center',
             }}
           >
             <Image
@@ -87,17 +91,20 @@ export default function Home() {
           </Box>
 
           <Box
+            mt={20}
             sx={{
               display: 'flex',
               width: '100vw',
               alignItems: 'center',
               justifyContent: 'space-around',
+              alignSelf: 'flex-end',
             }}
           >
             <Link
               href='https://nextjs.org/docs?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app'
               target='_blank'
               rel='noopener noreferrer'
+              style={{ textDecoration: 'none' }}
             >
               <Typography>
                 Docs <span>-&gt;</span>
@@ -111,11 +118,13 @@ export default function Home() {
               href='https://nextjs.org/learn?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app'
               target='_blank'
               rel='noopener noreferrer'
+              passHref
+              style={{ textDecoration: 'none' }}
             >
-              <Typography>
+              <Typography sx={{ textDecoration: 'none' }}>
                 Learn <span>-&gt;</span>
               </Typography>
-              <Typography>
+              <Typography sx={{ textDecoration: 'none' }}>
                 Learn about Next.js in an interactive course with&nbsp;quizzes!
               </Typography>
             </Link>
@@ -124,6 +133,7 @@ export default function Home() {
               href='https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app'
               target='_blank'
               rel='noopener noreferrer'
+              style={{ textDecoration: 'none' }}
             >
               <Typography>
                 Templates <span>-&gt;</span>
@@ -137,6 +147,7 @@ export default function Home() {
               href='https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app'
               target='_blank'
               rel='noopener noreferrer'
+              style={{ textDecoration: 'none' }}
             >
               <Typography>
                 Deploy <span>-&gt;</span>
@@ -147,7 +158,7 @@ export default function Home() {
               </Typography>
             </Link>
           </Box>
-        </main>
+        </Box>
       </MainLayout>
     </>
   );

@@ -42,14 +42,10 @@ export function MainLayout({ children, title = 'home' }: any) {
                   pr: '20px',
                 }}
               >
-                <Link href='/about'>
+                <Link href='/about' style={{ textDecoration: 'none' }}>
                   <Button sx={{ color: '#fff' }}>
                     {' '}
-                    <Typography
-                      textTransform='uppercase'
-                      variant='h6'
-                      // sx={{ my: 1 }}
-                    >
+                    <Typography textTransform='uppercase' variant='h6'>
                       About
                     </Typography>
                   </Button>
@@ -61,9 +57,13 @@ export function MainLayout({ children, title = 'home' }: any) {
                   pr: '20px',
                 }}
               >
-                <Link href='/'>
+                <Link href='/' style={{ textDecoration: 'none' }}>
                   <Button sx={{ color: '#fff' }}>
-                    <Typography textTransform='uppercase' variant='h6'>
+                    <Typography
+                      // textDecoration=' none'
+                      textTransform='uppercase'
+                      variant='h6'
+                    >
                       Home
                     </Typography>
                   </Button>
@@ -75,7 +75,7 @@ export function MainLayout({ children, title = 'home' }: any) {
                   pr: '20px',
                 }}
               >
-                <Link href='/task/1'>
+                <Link href='/task/1' style={{ textDecoration: 'none' }}>
                   <Button sx={{ color: '#fff' }}>
                     <Typography textTransform='uppercase' variant='h6'>
                       1
@@ -89,7 +89,7 @@ export function MainLayout({ children, title = 'home' }: any) {
                   pr: '20px',
                 }}
               >
-                <Link href='/task/2'>
+                <Link href='/task/2' style={{ textDecoration: 'none' }}>
                   <Button sx={{ color: '#fff' }}>
                     <Typography textTransform='uppercase' variant='h6'>
                       2
@@ -103,7 +103,7 @@ export function MainLayout({ children, title = 'home' }: any) {
                   pr: '20px',
                 }}
               >
-                <Link href='/task/3'>
+                <Link href='/task/3' style={{ textDecoration: 'none' }}>
                   <Button sx={{ color: '#fff' }}>
                     <Typography textTransform='uppercase' variant='h6'>
                       3
@@ -117,7 +117,7 @@ export function MainLayout({ children, title = 'home' }: any) {
                   pr: '20px',
                 }}
               >
-                <Link href='/task/4'>
+                <Link href='/task/4' style={{ textDecoration: 'none' }}>
                   <Button sx={{ color: '#fff' }}>
                     <Typography textTransform='uppercase' variant='h6'>
                       4

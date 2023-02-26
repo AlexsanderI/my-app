@@ -1,4 +1,3 @@
-import Link from 'next/link';
 import { MainLayout } from '@/components/MainLayout';
 import { useRouter } from 'next/router';
 import { useState, useEffect } from 'react';
@@ -24,8 +23,8 @@ export default function Task(data: any) {
   return (
     <>
       <MainLayout title='task'>
-        <Box mt={15}>
-          <Typography component={'span'} variant={'body2'} sx={{ my: 2 }}>
+        <Box>
+          <Typography sx={{ my: 2 }}>
             <h1>ID {router.query.id}</h1>
           </Typography>
           <div>{output}</div>
