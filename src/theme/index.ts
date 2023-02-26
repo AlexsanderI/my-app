@@ -12,7 +12,7 @@ export const theme = createTheme({
         body: {
           display: 'flex',
           justifyContent: 'space-between',
-          // alignItems: 'center',
+          backgroundColor: '#e9e9e9',
           flexDirection: 'colom',
           paddingTop: '80px',
           height: '100vh',

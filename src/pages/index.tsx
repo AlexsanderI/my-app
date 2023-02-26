@@ -26,7 +26,7 @@ export default function Home() {
         <link rel='icon' href='/favicon.ico' />
       </Head>
       <MainLayout title='Home'>
-        <PageBackground>
+        <Box>
           <Box
             sx={{
               mt: '50px',
@@ -44,8 +44,10 @@ export default function Home() {
                 alignItems: 'center',
               }}
             >
-              <Title>Get started by editing&nbsp;</Title>
-              <TitleWeight>src/pages/index.tsx</TitleWeight>
+              <PageBackground>
+                <Title>Get started by editing&nbsp;</Title>
+                <TitleWeight>src/pages/index.tsx</TitleWeight>
+              </PageBackground>
             </Box>
 
             <Link
@@ -148,7 +150,7 @@ export default function Home() {
               </TitleDescription>
             </Link>
           </Indentation>
-        </PageBackground>
+        </Box>
       </MainLayout>
     </>
   );

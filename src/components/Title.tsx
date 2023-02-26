@@ -3,7 +3,15 @@ import styled from '@emotion/styled';
 import { Box } from '@mui/material';
 import { Typography } from '@mui/material';
 
-export const PageBackground = styled(Box)<any>``;
+export const PageBackground = styled(Box)<any>`
+ display: flex;
+ width: 350px;
+ height: 45px;
+ border: 1px solid red;
+ align-items: center;
+ justify-content: center;
+}
+`;
 
 export const Title = styled(Typography)<any>`
   color: #000000;
@@ -19,13 +27,13 @@ export const Indentation = styled(Box)<any>`
   margin-top: 160px;
   display: flex;
   width: 100%;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
 `;
 
 export const TitleDescription = styled(Typography)`
   color: #000000;
-  margin: 10px;
+  margin: 0px 10px 0px 10px;
   opacity: 0.6;
   font-size: 0.9rem;
   line-height: 1.5;
