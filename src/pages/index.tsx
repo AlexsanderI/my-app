@@ -88,7 +88,7 @@ export default function Home() {
             <Number
               src='/thirteen.svg'
               alt='13'
-              width={40}
+              width={31}
               height={31}
               priority
             />
