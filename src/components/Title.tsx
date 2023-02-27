@@ -22,7 +22,7 @@ export const Number = styled(Image)<any>`
   align-items: center;
   width: 75px;
   height: 75px;
-  padding: 25px 10px;
+  padding: 22px 17.5px;
   margin-left: 16px;
   transform: translateZ(0);
   border-radius: 12px;
@@ -46,6 +46,46 @@ export const Indentation = styled(Box)<any>`
   width: 100%;
   justify-content: center;
   align-items: center;
+`;
+
+export const IndentationNext = styled(Box)<any>`
+  margin-top: 130px;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  &::before {
+    content: '';
+    left: 50%;
+    position: absolute;
+    filter: blur(45px);
+    transform: translateZ(0);
+    background: radial-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+    border-radius: 50%;
+    width: 480px;
+    height: 360px;
+    margin-left: -400px;
+    z-index: -1;
+  }
+
+  &::after {
+    content: '';
+    left: 50%;
+    position: absolute;
+    filter: blur(45px);
+    transform: translateZ(0);
+    background: conic-gradient(
+      from 180deg at 50% 50%,
+      #16abff33 0deg,
+      #0885ff33 55deg,
+      #54d6ff33 120deg,
+      #0071ff33 160deg,
+      transparent 360deg
+    );
+    width: 240px;
+    height: 180px;
+    z-index: -1;
+  }
 `;
 
 export const TitleDescription = styled(Typography)`

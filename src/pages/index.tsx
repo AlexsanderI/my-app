@@ -14,6 +14,7 @@ import {
   PageBackground,
   Number,
   TitleBo,
+  IndentationNext,
 } from '@/components/Title';
 import { Indentation } from '@/components/Title';
 
@@ -76,7 +77,7 @@ export default function Home() {
               </Box>
             </Link>
           </Box>
-          <Indentation>
+          <IndentationNext>
             <Image
               src='/next.svg'
               alt='Next.js Logo'
@@ -89,10 +90,10 @@ export default function Home() {
               src='/thirteen.svg'
               alt='13'
               width={31}
-              height={31}
+              height={40}
               priority
             />
-          </Indentation>
+          </IndentationNext>
 
           <Indentation>
             <TitleBo>
