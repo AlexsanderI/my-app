@@ -1,7 +1,7 @@
 import { styled as muiStyled } from '@mui/system';
 import styled from '@emotion/styled';
 import { Box, Typography } from '@mui/material';
-
+import Link from 'next/link';
 import Image from 'next/image';
 
 export const PageBackground = styled(Box)<any>``;
@@ -41,7 +41,7 @@ export const TitleWeight = styled(Title)<any>`
 `;
 
 export const Indentation = styled(Box)<any>`
-  margin-top: 160px;
+  margin-top: 130px;
   display: flex;
   width: 100%;
   justify-content: center;
@@ -54,7 +54,18 @@ export const TitleDescription = styled(Typography)`
   opacity: 0.6;
   font-size: 0.9rem;
   line-height: 1.5;
-  max-width: 30ch;
+  max-width: 29ch;
+`;
+
+export const TitleBo = styled(Box)<any>`
+  &:hover {
+    // padding: 1rem 1.2rem;
+    border-radius: 12px;
+    background-color: rgba(180, 185, 188, 0.3);
+    box-shadow: 0px 2px 8px -1px rgba(131, 134, 135, 0.5);
+    border: -1px solid rgba(131, 134, 135, 0.5);
+    transition: background-color 1000ms, box-shadow 10000ms;
+  }
 `;
 
 export const TitleH2 = styled.h2<any>`

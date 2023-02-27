@@ -42,11 +42,14 @@ export function MainLayout({ children, title = 'home' }: any) {
                   pr: '20px',
                 }}
               >
-                <Link href='/about' style={{ textDecoration: 'none' }}>
+                <Link href='/' style={{ textDecoration: 'none' }}>
                   <Button sx={{ color: '#fff' }}>
-                    {' '}
-                    <Typography textTransform='uppercase' variant='h6'>
-                      About
+                    <Typography
+                      // textDecoration=' none'
+                      textTransform='uppercase'
+                      variant='h6'
+                    >
+                      Home
                     </Typography>
                   </Button>
                 </Link>
@@ -57,14 +60,11 @@ export function MainLayout({ children, title = 'home' }: any) {
                   pr: '20px',
                 }}
               >
-                <Link href='/' style={{ textDecoration: 'none' }}>
+                <Link href='/about' style={{ textDecoration: 'none' }}>
                   <Button sx={{ color: '#fff' }}>
-                    <Typography
-                      // textDecoration=' none'
-                      textTransform='uppercase'
-                      variant='h6'
-                    >
-                      Home
+                    {' '}
+                    <Typography textTransform='uppercase' variant='h6'>
+                      About
                     </Typography>
                   </Button>
                 </Link>

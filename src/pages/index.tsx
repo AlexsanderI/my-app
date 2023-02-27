@@ -13,6 +13,7 @@ import {
   EditBackground,
   PageBackground,
   Number,
+  TitleBo,
 } from '@/components/Title';
 import { Indentation } from '@/components/Title';
 
@@ -94,63 +95,69 @@ export default function Home() {
           </Indentation>
 
           <Indentation>
-            <Link
-              href='https://nextjs.org/docs?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app'
-              target='_blank'
-              rel='noopener noreferrer'
-              style={{ textDecoration: 'none' }}
-            >
-              <TitleH2>
-                Docs <span>-&gt;</span>
-              </TitleH2>
-              <TitleDescription>
-                Find in-depth information about Next.js features and&nbsp;API.
-              </TitleDescription>
-            </Link>
-
-            <Link
-              href='https://nextjs.org/learn?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app'
-              target='_blank'
-              rel='noopener noreferrer'
-              passHref
-              style={{ textDecoration: 'none' }}
-            >
-              <TitleH2 sx={{ textDecoration: 'none' }}>
-                Learn <span>-&gt;</span>
-              </TitleH2>
-              <TitleDescription sx={{ textDecoration: 'none' }}>
-                Learn about Next.js in an interactive course with&nbsp;quizzes!
-              </TitleDescription>
-            </Link>
-
-            <Link
-              href='https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app'
-              target='_blank'
-              rel='noopener noreferrer'
-              style={{ textDecoration: 'none' }}
-            >
-              <TitleH2>
-                Templates <span>-&gt;</span>
-              </TitleH2>
-              <TitleDescription>
-                Discover and deploy boilerplate example Next.js&nbsp;projects.
-              </TitleDescription>
-            </Link>
-
-            <Link
-              href='https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app'
-              target='_blank'
-              rel='noopener noreferrer'
-              style={{ textDecoration: 'none' }}
-            >
-              <TitleH2>
-                Deploy <span>-&gt;</span>
-              </TitleH2>
-              <TitleDescription>
-                Instantly deploy your Next.js site to a shareable URL
-                with&nbsp;Vercel.
-              </TitleDescription>
-            </Link>
+            <TitleBo>
+              <Link
+                href='https://nextjs.org/docs?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app'
+                target='_blank'
+                rel='noopener noreferrer'
+                style={{ textDecoration: 'none' }}
+              >
+                <TitleH2>
+                  Docs <span>-&gt;</span>
+                </TitleH2>
+                <TitleDescription>
+                  Find in-depth information about Next.js features and&nbsp;API.
+                </TitleDescription>
+              </Link>
+            </TitleBo>
+            <TitleBo>
+              <Link
+                href='https://nextjs.org/learn?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app'
+                target='_blank'
+                rel='noopener noreferrer'
+                passHref
+                style={{ textDecoration: 'none' }}
+              >
+                <TitleH2 sx={{ textDecoration: 'none' }}>
+                  Learn <span>-&gt;</span>
+                </TitleH2>
+                <TitleDescription sx={{ textDecoration: 'none' }}>
+                  Learn about Next.js in an interactive course
+                  with&nbsp;quizzes!
+                </TitleDescription>
+              </Link>
+            </TitleBo>
+            <TitleBo>
+              <Link
+                href='https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app'
+                target='_blank'
+                rel='noopener noreferrer'
+                style={{ textDecoration: 'none' }}
+              >
+                <TitleH2>
+                  Templates <span>-&gt;</span>
+                </TitleH2>
+                <TitleDescription>
+                  Discover and deploy boilerplate example Next.js&nbsp;projects.
+                </TitleDescription>
+              </Link>
+            </TitleBo>
+            <TitleBo>
+              <Link
+                href='https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app'
+                target='_blank'
+                rel='noopener noreferrer'
+                style={{ textDecoration: 'none' }}
+              >
+                <TitleH2>
+                  Deploy <span>-&gt;</span>
+                </TitleH2>
+                <TitleDescription>
+                  Instantly deploy your Next.js site to a shareable URL
+                  with&nbsp;Vercel.
+                </TitleDescription>
+              </Link>
+            </TitleBo>
           </Indentation>
         </PageBackground>
       </MainLayout>
