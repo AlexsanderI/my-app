@@ -4,12 +4,12 @@ import { Box } from '@mui/material';
 import { Typography } from '@mui/material';
 
 export const EditBackground = styled(Box)<any>`
- display: flex;
- border: 1px solid red;
-    padding: 1rem;
-      background-color: rgba(238, 240, 241), 0.5);
-    // border: 1px solid rgba(172, 175, 176), 0.3);
-    border-radius: 12px;
+display: flex;
+/* border: 1px solid red; */
+padding: 1rem;
+background-color: rgba(238, 240, 241, 0.5);
+border: 1px solid rgba(172, 175, 176, 0.3);
+border-radius: 12px;
 }
 `;
 
