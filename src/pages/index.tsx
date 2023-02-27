@@ -11,6 +11,8 @@ import {
   TitleH2,
   TitleDescription,
   EditBackground,
+  PageBackground,
+  Number,
 } from '@/components/Title';
 import { Indentation } from '@/components/Title';
 
@@ -26,7 +28,7 @@ export default function Home() {
         <link rel='icon' href='/favicon.ico' />
       </Head>
       <MainLayout title='Home'>
-        <Box>
+        <PageBackground>
           <Box
             sx={{
               mt: '50px',
@@ -82,7 +84,7 @@ export default function Home() {
               priority
             />
 
-            <Image
+            <Number
               src='/thirteen.svg'
               alt='13'
               width={40}
@@ -150,7 +152,7 @@ export default function Home() {
               </TitleDescription>
             </Link>
           </Indentation>
-        </Box>
+        </PageBackground>
       </MainLayout>
     </>
   );

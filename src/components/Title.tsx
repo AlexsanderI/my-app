@@ -1,7 +1,10 @@
 import { styled as muiStyled } from '@mui/system';
 import styled from '@emotion/styled';
-import { Box } from '@mui/material';
-import { Typography } from '@mui/material';
+import { Box, Typography } from '@mui/material';
+
+import Image from 'next/image';
+
+export const PageBackground = styled(Box)<any>``;
 
 export const EditBackground = styled(Box)<any>`
 display: flex;
@@ -11,6 +14,20 @@ background-color: rgba(238, 240, 241, 0.5);
 border: 1px solid rgba(172, 175, 176, 0.3);
 border-radius: 12px;
 }
+`;
+
+export const Number = styled(Image)<any>`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 75px;
+  height: 75px;
+  padding: 25px 10px;
+  margin-left: 16px;
+  transform: translateZ(0);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0px 2px 8px -1px #0000001a;
 `;
 
 export const Title = styled(Typography)<any>`
