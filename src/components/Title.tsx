@@ -62,9 +62,10 @@ export const TitleBo = styled(Box)<any>`
     // padding: 1rem 1.2rem;
     border-radius: 12px;
     background-color: rgba(180, 185, 188, 0.3);
-    box-shadow: 0px 2px 8px -1px rgba(131, 134, 135, 0.5);
-    border: -1px solid rgba(131, 134, 135, 0.5);
-    transition: background-color 1000ms, box-shadow 10000ms;
+    // background-color: rgba(238, 240, 241, 0.5);
+    box-shadow: 0px 2px 8px -1px #0000001a;
+    // border: -1px solid rgba(131, 134, 135, 0.5);
+    transition: background-color 800ms, box-shadow 800ms;
   }
 `;
 
