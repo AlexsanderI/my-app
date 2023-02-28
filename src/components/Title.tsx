@@ -2,7 +2,6 @@ import { styled as muiStyled } from '@mui/system';
 import styled from '@emotion/styled';
 import { Box, Typography } from '@mui/material';
 import Link from 'next/link';
-import Image from 'next/image';
 
 export const PageBackground = styled(Box)<any>``;
 
@@ -16,7 +15,7 @@ border-radius: 12px;
 }
 `;
 
-export const Number = styled(Image)<any>`
+export const Number = styled(Box)<any>`
   display: flex;
   justify-content: center;
   align-items: center;
@@ -44,7 +43,6 @@ export const Number = styled(Image)<any>`
       #00000010,
       #00000080
     );
-    animation: none;
   }
 
   &::after {
@@ -60,6 +58,9 @@ export const Number = styled(Image)<any>`
       rgba(228, 232, 233, 1)
     );
     background-clip: content-box;
+  }
+  &::before {
+    animation: none;
   }
 `;
 

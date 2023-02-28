@@ -85,14 +85,15 @@ export default function Home() {
               height={37}
               priority
             />
-
-            <Number
-              src='/thirteen.svg'
-              alt='13'
-              width={31}
-              height={40}
-              priority
-            />
+            <Number>
+              <Image
+                src='/thirteen.svg'
+                alt='13'
+                width={31}
+                height={40}
+                priority
+              />
+            </Number>
           </IndentationNext>
 
           <Indentation>
