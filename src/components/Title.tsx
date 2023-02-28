@@ -38,7 +38,16 @@ export const Number = styled(Box)<any>`
     // content: '';
     // position: absolute;
     // z-index: -1;
-    animation: 6s rotate linear infinite;
+    animation: myAnimation 6s linear infinite;
+
+    @keyframes myAnimation {
+      from {
+        transform: rotate(0deg);
+      }
+      to {
+        transform: rotate(360deg);
+      }
+    }
     width: 200%;
     height: 200%;
     background: conic-gradient(
