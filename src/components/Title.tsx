@@ -27,10 +27,17 @@ export const Number = styled(Box)<any>`
   border-radius: 12px;
   overflow: hidden;
   box-shadow: 0px 2px 8px -1px #0000001a;
-  &::before {
+  &::before,
+  &::after {
     content: '';
     position: absolute;
     z-index: -1;
+  }
+
+  &::before {
+    // content: '';
+    // position: absolute;
+    // z-index: -1;
     animation: 6s rotate linear infinite;
     width: 200%;
     height: 200%;
@@ -46,9 +53,9 @@ export const Number = styled(Box)<any>`
   }
 
   &::after {
-    content: '';
-    position: absolute;
-    z-index: -1;
+    // content: '';
+    // position: absolute;
+    // z-index: -1;
     inset: 0;
     padding: 1px;
     border-radius: 12px;
