@@ -28,6 +28,39 @@ export const Number = styled(Image)<any>`
   border-radius: 12px;
   overflow: hidden;
   box-shadow: 0px 2px 8px -1px #0000001a;
+  &::before {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    animation: 6s rotate linear infinite;
+    width: 200%;
+    height: 200%;
+    background: conic-gradient(
+      #00000080,
+      #00000040,
+      #00000030,
+      #00000020,
+      #00000010,
+      #00000010,
+      #00000080
+    );
+    animation: none;
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    inset: 0;
+    padding: 1px;
+    border-radius: 12px;
+    background: linear-gradient(
+      to bottom right,
+      rgba(239, 245, 249, 1),
+      rgba(228, 232, 233, 1)
+    );
+    background-clip: content-box;
+  }
 `;
 
 export const Title = styled(Typography)<any>`
