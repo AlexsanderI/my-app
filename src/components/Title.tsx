@@ -1,9 +1,14 @@
-import { styled as muiStyled } from '@mui/system';
 import styled from '@emotion/styled';
 import { Box, Typography } from '@mui/material';
-import Link from 'next/link';
 
-export const PageBackground = styled(Box)<any>``;
+export const PageBackground = styled(Box)<any>`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 80vh;
+  width: 100vw;
+  justify-content: space-between;
+`;
 
 export const EditBackground = styled(Box)<any>`
 display: flex;
@@ -35,9 +40,6 @@ export const Number = styled(Box)<any>`
   }
 
   &::before {
-    // content: '';
-    // position: absolute;
-    // z-index: -1;
     animation: myAnimation 6s linear infinite;
 
     @keyframes myAnimation {
@@ -62,9 +64,6 @@ export const Number = styled(Box)<any>`
   }
 
   &::after {
-    // content: '';
-    // position: absolute;
-    // z-index: -1;
     inset: 0;
     padding: 1px;
     border-radius: 12px;
@@ -91,17 +90,17 @@ export const TitleWeight = styled(Title)<any>`
 `;
 
 export const Indentation = styled(Box)<any>`
-  margin-top: 130px;
+  // margin-top: 130px;
   display: flex;
-  width: 100%;
-  justify-content: center;
+  width: 80vw;
+  justify-content: space-between;
   align-items: center;
 `;
 
 export const IndentationNext = styled(Box)<any>`
-  margin-top: 130px;
+  // margin-top: 130px;
   display: flex;
-  width: 100%;
+  width: 80vw;
   justify-content: center;
   align-items: center;
   &::before {

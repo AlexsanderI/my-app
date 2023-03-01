@@ -3,8 +3,8 @@ import Image from 'next/image';
 import { Inter } from '@next/font/google';
 import { MainLayout } from '@/components/MainLayout';
 import { Box } from '@mui/system';
-import { Typography } from '@mui/material';
-import Link from 'next/link';
+
+import { LinkStyle } from '@/components/NavMenu';
 import {
   Title,
   TitleWeight,
@@ -15,8 +15,8 @@ import {
   Number,
   TitleBo,
   IndentationNext,
+  Indentation,
 } from '@/components/Title';
-import { Indentation } from '@/components/Title';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -33,7 +33,7 @@ export default function Home() {
         <PageBackground>
           <Box
             sx={{
-              mt: '50px',
+              // mt: '50px',
               display: 'flex',
               width: '100vw',
               alignItems: 'center',
@@ -54,13 +54,12 @@ export default function Home() {
               </EditBackground>
             </Box>
 
-            <Link
+            <LinkStyle
               href='https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app'
               target='_blank'
               rel='noopener noreferrer'
-              style={{ textDecoration: 'none' }}
+              // style={{ textDecoration: 'none' }}
             >
-              {' '}
               <Box
                 sx={{
                   display: 'flex',
@@ -75,7 +74,7 @@ export default function Home() {
                   priority
                 />
               </Box>
-            </Link>
+            </LinkStyle>
           </Box>
           <IndentationNext>
             <Image
@@ -98,11 +97,10 @@ export default function Home() {
 
           <Indentation>
             <TitleBo>
-              <Link
+              <LinkStyle
                 href='https://nextjs.org/docs?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app'
                 target='_blank'
                 rel='noopener noreferrer'
-                style={{ textDecoration: 'none' }}
               >
                 <TitleH2>
                   Docs <span>-&gt;</span>
@@ -110,15 +108,14 @@ export default function Home() {
                 <TitleDescription>
                   Find in-depth information about Next.js features and&nbsp;API.
                 </TitleDescription>
-              </Link>
+              </LinkStyle>
             </TitleBo>
             <TitleBo>
-              <Link
+              <LinkStyle
                 href='https://nextjs.org/learn?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app'
                 target='_blank'
                 rel='noopener noreferrer'
                 passHref
-                style={{ textDecoration: 'none' }}
               >
                 <TitleH2 sx={{ textDecoration: 'none' }}>
                   Learn <span>-&gt;</span>
@@ -127,14 +124,13 @@ export default function Home() {
                   Learn about Next.js in an interactive course
                   with&nbsp;quizzes!
                 </TitleDescription>
-              </Link>
+              </LinkStyle>
             </TitleBo>
             <TitleBo>
-              <Link
+              <LinkStyle
                 href='https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app'
                 target='_blank'
                 rel='noopener noreferrer'
-                style={{ textDecoration: 'none' }}
               >
                 <TitleH2>
                   Templates <span>-&gt;</span>
@@ -142,14 +138,13 @@ export default function Home() {
                 <TitleDescription>
                   Discover and deploy boilerplate example Next.js&nbsp;projects.
                 </TitleDescription>
-              </Link>
+              </LinkStyle>
             </TitleBo>
             <TitleBo>
-              <Link
+              <LinkStyle
                 href='https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app'
                 target='_blank'
                 rel='noopener noreferrer'
-                style={{ textDecoration: 'none' }}
               >
                 <TitleH2>
                   Deploy <span>-&gt;</span>
@@ -158,7 +153,7 @@ export default function Home() {
                   Instantly deploy your Next.js site to a shareable URL
                   with&nbsp;Vercel.
                 </TitleDescription>
-              </Link>
+              </LinkStyle>
             </TitleBo>
           </Indentation>
         </PageBackground>
