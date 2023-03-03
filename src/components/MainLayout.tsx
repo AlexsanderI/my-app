@@ -7,6 +7,7 @@ import {
   Header,
   TextHeder,
   ButtonHedear,
+  ButtonBox,
   RightButtonHeder,
 } from './NavMenu';
 
@@ -33,7 +34,6 @@ export function MainLayout({ children, title = 'home' }: any) {
       title: '4',
     },
   ];
-
   const ClickButton = NameButton.map((button) => (
     <LinkStyle key={button.title} href={button.href}>
       <ButtonHedear>
@@ -51,12 +51,12 @@ export function MainLayout({ children, title = 'home' }: any) {
           <Header>
             <LinkStyle href='/'>
               <ButtonHedear>
-                <TextHeder variant='h6'>Next</TextHeder>
+                <TextHeder>Next</TextHeder>
               </ButtonHedear>
             </LinkStyle>
-            <RightButtonHeder>
-              <Box>{ClickButton}</Box>
-            </RightButtonHeder>
+            <ButtonBox>
+              <RightButtonHeder>{ClickButton}</RightButtonHeder>
+            </ButtonBox>
           </Header>
         </AppBar>
       </nav>

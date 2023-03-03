@@ -25,7 +25,7 @@ export const ButtonHedear = styled(Button)<any>`
   }
 `;
 
-export const RightButtonHeder = styled(Button)<any>`
+export const RightButtonHeder = styled(Box)<any>`
   display: flex;
   justify-content: space-between;
   padding-right: 20px;
@@ -33,4 +33,11 @@ export const RightButtonHeder = styled(Button)<any>`
 
 export const LinkStyle = styled(Link)<any>`
   text-decoration: none;
+`;
+
+export const ButtonBox = styled(Box)<any>`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 20px;
 `;
