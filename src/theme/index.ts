@@ -15,7 +15,7 @@ export const theme = createTheme({
           backgroundColor: '#e9e9e9',
           flexDirection: 'colom',
           paddingTop: '80px',
-          height: '100vh',
+          // height: '500px',
         },
       },
     },

@@ -3,6 +3,7 @@ import Image from 'next/image';
 import { Inter } from '@next/font/google';
 import { MainLayout } from '@/components/MainLayout';
 import { Box } from '@mui/system';
+import { useRouter } from 'next/router';
 
 import { LinkStyle } from '@/components/NavMenu';
 import {
@@ -21,6 +22,10 @@ import {
 const inter = Inter({ subsets: ['latin'] });
 
 export default function Home() {
+  const router = useRouter();
+  const name = router.query;
+  console.log(name);
+
   return (
     <>
       <Head>
@@ -40,7 +45,7 @@ export default function Home() {
               alignSelf: 'flex-start',
             }}
           >
-            <Title>Hi Alex</Title>
+            <Title>Hi {name.name}</Title>
             <Box
               sx={{
                 display: 'flex',

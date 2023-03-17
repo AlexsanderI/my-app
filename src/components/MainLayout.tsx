@@ -1,7 +1,6 @@
 import Head from 'next/head';
 import AppBar from '@mui/material/AppBar';
-import Box from '@mui/material/Box';
-
+import Link from 'next/link';
 import {
   LinkStyle,
   Header,
@@ -12,6 +11,8 @@ import {
 } from './NavMenu';
 
 export function MainLayout({ children, title = 'home' }: any) {
+  // const name = 'Alex!';
+
   const NameButton = [
     {
       href: '/about',
@@ -49,7 +50,7 @@ export function MainLayout({ children, title = 'home' }: any) {
       <nav>
         <AppBar component='nav'>
           <Header>
-            <LinkStyle href='/'>
+            <LinkStyle href={{ pathname: '/', query: { name: 'Alex!' } }}>
               <ButtonHedear>
                 <TextHeder>Next</TextHeder>
               </ButtonHedear>
